@@ -351,12 +351,7 @@ This is the overall data flow diagram of the Car-pool.
 
 ---
 
-## Authors
 
-* [Abhishek Pawar](https://github.com/thehiddencoder)
-* [Siddharth Goel](https://github.com/goel97)
-* [Saahil Sirowa](https://github.com/ssirowa14)
-* [Siddharth Shrivastava](https://github.com/sid20071997)
 
 ---
 ## Appendix and FAQ
