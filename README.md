@@ -354,8 +354,3 @@ This is the overall data flow diagram of the Car-pool.
 
 
 ---
-## Appendix and FAQ
-
-:::info
-**Find this document incomplete?** Leave a comment!
-:::
