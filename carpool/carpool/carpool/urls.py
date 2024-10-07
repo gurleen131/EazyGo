@@ -15,10 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path , include
+from django.shortcuts import redirect
+def redirect_to_login(request):
+    return redirect('/login/')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/' , include('logPage.urls')),
     path('rider/', include('rider.urls')),
-    path('driver/' , include('driver.urls'))
+    path('driver/' , include('driver.urls')),
+    path('', redirect_to_login),
 ]
