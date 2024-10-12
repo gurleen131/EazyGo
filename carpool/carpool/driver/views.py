@@ -13,8 +13,8 @@ import googlemaps
 import json
 
 
-def index_view(request):
-    return render(request, 'index.html')
+def index(request):
+    return render(request, 'login.html')
 
 def drive_or_ride(request):
     return render(request, 'drive_or_ride.html')
