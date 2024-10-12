@@ -13,14 +13,20 @@ import googlemaps
 import json
 
 
+def index_view(request):
+    return render(request, 'index.html')
+
+def drive_or_ride(request):
+    return render(request, 'drive_or_ride.html')
+
 def driverHome(request):
 	print(request.user.username)	
 	return render(request , "driverHome.html" , {'username' : request.user.username})
 
 def driverInfo(request):
 	print(request.user.username + " driveInfo")
-	print(request.POST['destination'])
-	return render(request , "driverProcess1.html" , {'username' : request.user.username , 'dest' : request.POST['destination']})
+	print(request.POST.get('destination',None))
+	return render(request , "driverProcess1.html" , {'username' : request.user.username , 'dest' : request.POST.get('destination',None)})
 
 def searchRider(request):
 	print("@@@@@@@@@@@@@@@@@@@@@@@@@*******************&&&&&&&&&&&&&&&&&&&&&&&&&&&**********************")

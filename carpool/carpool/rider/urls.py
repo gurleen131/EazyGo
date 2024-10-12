@@ -18,6 +18,9 @@ app_name = 'rider'
 
 urlpatterns = [
 	path('' , views.index , name = "ride"),
+    path('drive_or_ride.html', views.drive_or_ride, name='drive_or_ride'),
+    path('charts.html', views.charts, name='charts'),
+    path('tables.html', views.charts, name='tables'),
 	path('submit', views.rideInfo, name = "rideInfo"),
 	path('processsing', views.statusUpdate, name = "statusUpdate"),
 	path('success', views.rideSuccessful, name = "rideSuccessful"),

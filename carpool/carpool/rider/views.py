@@ -16,6 +16,15 @@ from django.http import JsonResponse
 
 # Create your views here.
 
+def drive_or_ride(request):
+    return render(request, 'drive_or_ride.html')
+
+def charts(request):
+    return render(request, 'charts.html')
+
+def tables(request):
+    return render(request, 'charts.html')
+
 def index(request):
 	print(request.user.username)
 	return render(request , "riderHome.html" , {'username' : request.user.username})
@@ -65,7 +74,7 @@ def rideSuccessful(request):
 		print("rider id", id)
 		rideDetails = get_object_or_404(ride, pk=id)
 	#return render(request, 'polls/results.html', {'rideDetails': rideDetails})
-	return HttpResponse("<h1>SUCCESS </h1>")
+	return HttpResponse("<h1>SUCCESS</h1>")
 
 # def endRide(request):
 # 	print(request.GET['id'], "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
