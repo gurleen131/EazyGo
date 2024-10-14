@@ -31,6 +31,7 @@ def index(request):
 	# return HttpResponse("<h1>SUCCESS</h1>")
 
 def rideInfo(request):
+	context={}
 	if request.method == "POST":
 		print(request.POST['userId'])
 		print(request.POST['pickup'])
