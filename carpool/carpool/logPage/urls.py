@@ -17,7 +17,7 @@ app_name = 'logPage'
 # ]
 
 urlpatterns = [
-	path('login.html' , views.index , name = "index"),
+	path('' , views.index , name = "index"),
 	path('register.html' , views.register , name = "register"),
 	path('forgot-password.html' , views.forget , name = "forget"),
     
