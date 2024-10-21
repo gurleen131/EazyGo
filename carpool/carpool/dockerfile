@@ -8,7 +8,7 @@ COPY ./ ./
 RUN pip install -r requirements.txt
 # Copy the entire application code to the container
 COPY ./ ./
-COPY ./carpool/requirements.txt /app/
+COPY ./carpool/carpool/requirements.txt /app/
 # Expose port 8000 to the outside world
 EXPOSE 8000
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
